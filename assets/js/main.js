@@ -1,14 +1,16 @@
 
 
 /*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-menu'),navToggle = document.getElementById('nav-toggle'),navClose =  document.getElementById('nav-close');
+const navMenu = document.getElementById('nav-menu'),
+    navToggle = document.getElementById('nav-toggle'),
+    navClose =  document.getElementById('nav-close');
     
 
     /*=========== MENU SHOW ==============*/
     if (navToggle)
     {
         navToggle.addEventListener('click', () =>{
-            navMenu.classList.add('show-menu')
+            navMenu.classList.add('show-menu');
         })
     }
 
@@ -17,13 +19,22 @@ const navMenu = document.getElementById('nav-menu'),navToggle = document.getElem
     if (navClose)
     {
         navClose.addEventListener('click', () =>{
-            navMenu.classList.remove('show-menu')
+            navMenu.classList.remove('show-menu');
         })
     }
 
 
-
 /*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelectorAll('.nav__link');
+
+function linkAction()
+{
+    const navMenu = document.getElementById('nav-menu');
+    //cuando pulsemos en cada nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu');
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
