@@ -33,7 +33,7 @@
                <div class="nav__menu" id="nav-menu">
                    <ul class="nav__list">
                        <li class="nav__item">
-                           <a href="#home" class="nav__link">
+                           <a href="#home" class="nav__link active-link">
                                Home
                            </a>
                         </li>
@@ -401,31 +401,34 @@
                <div class="featured__container container">
                    <ul class="featured__filters">
                        <li>
-                           <button class="featured__item">
+                           <button class="featured__item active-featured" data-filter="all">
                                <span>
                                    All
                                </span>
                            </button>
                        </li>
+
                        <li>
-                           <button class="featured__item">
+                           <button class="featured__item" data-filter=".tesla">
                                 <img src="assets/img/logo3.png" alt="Logo Image">
                            </button>
                        </li>
+
                        <li>
-                           <button class="featured__item">
+                           <button class="featured__item" data-filter=".audi">
                                 <img src="assets/img/logo2.png" alt="Logo Image">
                            </button>
                        </li>
+
                        <li>
-                           <button class="featured__item">
+                           <button class="featured__item" data-filter=".porsche">
                                 <img src="assets/img/logo1.png" alt="Logo Image">
                            </button>
                        </li>
                    </ul>
 
                    <div class="featured__content grid">
-                        <article class="featured__card">
+                        <article class="featured__card mix tesla">
                             <div class="shape shape__smaller"></div>
                             <h1 class="featured__title">
                                 Tesla
@@ -446,7 +449,7 @@
                             </button>
                         </article>
 
-                        <article class="featured__card">
+                        <article class="featured__card mix tesla">
                             <div class="shape shape__smaller"></div>
                             <h1 class="featured__title">
                                 Tesla
@@ -467,7 +470,7 @@
                             </button>
                         </article>
 
-                        <article class="featured__card">
+                        <article class="featured__card mix audi">
                             <div class="shape shape__smaller"></div>
                             <h1 class="featured__title">
                                 Audi
@@ -488,7 +491,7 @@
                             </button>
                         </article>
 
-                        <article class="featured__card">
+                        <article class="featured__card mix porsche">
                             <div class="shape shape__smaller"></div>
                             <h1 class="featured__title">
                                 Porsche
@@ -509,7 +512,7 @@
                             </button>
                         </article>
 
-                        <article class="featured__card">
+                        <article class="featured__card mix porsche">
                             <div class="shape shape__smaller"></div>
                             <h1 class="featured__title">
                                 Porsche
@@ -535,22 +538,168 @@
 
             <!--==================== OFFER ====================-->
             <section class="offer section">
-                
+                <div class="offer__container container grid">
+                    <img src="assets/img/offer-bg.png" alt="Offer Bg Image" class="offer__bg">
+                    <div class="offer__data">
+                        <h2 class="section__title offer__title">
+                            Do You Want To Receive 
+                            <br> 
+                            Special Offers?
+                        </h2>
+
+                        <p class="offer__description">
+                            Be the first to receive all the information about our 
+                            products and new cars by email by subscribing to our 
+                            mailing list.
+                        </p>
+
+                        <a href="#" class="button">
+                            Subscribe Now
+                        </a>
+                    </div>
+
+                    <img src="assets/img/offer.png" alt="Offer Main Image" class="offer__img">
+                </div>
             </section>
 
             <!--==================== LOGOS ====================-->
             <section class="logos section">
-                
+                <div class="logos__container container grid">
+                    <div class="logos__content">
+                        <img src="assets/img/logo1.png" alt="Logo Image 1" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="assets/img/logo2.png" alt="Logo Image 2" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="assets/img/logo3.png" alt="Logo Image 3" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="assets/img/logo4.png" alt="Logo Image 4" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="assets/img/logo5.png" alt="Logo Image 5" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="assets/img/logo6.png" alt="Logo Image 6" class="logos__img">
+                    </div>
+                </div>
             </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
-            
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-steering-line"></i>
+                        Elecar
+                    </a>
+
+                    <p class="footer__description">
+                        We offer the best electric cars of <br> 
+                        the most recognized brands in <br> 
+                        the world.
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                       Company 
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">
+                                Cars
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">
+                               History 
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">
+                                Shop
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Information
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">
+                                Request a quote
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Find a dealer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Contact us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Services
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Follow us
+                    </h3>
+
+                    <ul class="footer__social">
+
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">
+                &#169; Bedimcode. All rigths reserved
+            </span>
         </footer>
 
 
         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
 
 
         <!--=============== SCROLL REVEAL ===============-->
@@ -560,7 +709,7 @@
         <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--=============== MIXITUP JS ===============-->
-        <script src=""></script>
+        <script src="assets/js/mixitup.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
