@@ -134,6 +134,31 @@ window.addEventListener('scroll', scrollActive);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    //reset: true
+})
+
+sr.reveal(`.home__title, popular__container, .features__img, .featured__filters`);
+sr.reveal(`.home__subtitle`,{delay: 500});
+sr.reveal(`.home__elec`,{delay: 600,
+origin: 'bottom'});
+sr.reveal(`.home__img`,{delay: 600});
+sr.reveal(`.home__car-data`,{delay: 600, interval: 100, origin: 'right'});
+sr.reveal(`.home__car-icon`,{delay: 700, interval: 100, origin: 'bottom'});
+sr.reveal(`.home__button`, 
+{origin: 'bottom',
+duration: 1000});
+sr.reveal(`.features__card`, {interval: 300});
+sr.reveal(`.featured__card, .logos__content`, {interval: 100});
+sr.reveal(`.features__map`, {delay: 600, origin: 'bottom'});
+sr.reveal(`.about__group, offer__data`, {origin: 300});
+sr.reveal(`about__data, .offer__img`, {origin: 'right'})
+
+
 
 // function activeStateColor(items, action, prop)
 // {
